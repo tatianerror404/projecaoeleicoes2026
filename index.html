@@ -997,7 +997,8 @@ function chaveDe(texto){
 }
 function nomeProprio(texto){let x=texto.trim();return !x||/^(?:[A-Z]{2}|[LF] \+[\d.,]+|\d+[\d\s.,%+−-]*|Lula|Flávio(?: Bolsonaro)?|TSE|INMET|IBGE|PT|PL|CSV|JSON|HTTP|HTTPS|N\/A|UF:UF,UF)$/u.test(x)||/^https?:\/\//.test(x);}
 function variaveis(x){return [...String(x).matchAll(/\{([a-zA-Z][a-zA-Z0-9_]*)\}/g)].map(v=>v[1]).sort().join('|');}
-function preenche(template,vars){return String(template).replace(/\{([a-zA-Z][a-zA-Z0-9_]*)\}/g,(match,key)=>Object.prototype.hasOwnProperty.call(vars||{},key)?String(vars[key]):match);}function faltante(chave){return idioma!=='pt-BR'&&idioma!=='qps-PLOC'&&!(TRADUCOES[idioma]&&TRADUCOES[idioma][chave]);}
+function preenche(template,vars){return String(template).replace(/\{([a-zA-Z][a-zA-Z0-9_]*)\}/g,(match,key)=>Object.prototype.hasOwnProperty.call(vars||{},key)?String(vars[key]):match);}
+function faltante(chave){return idioma!=='pt-BR'&&idioma!=='qps-PLOC'&&!(TRADUCOES[idioma]&&TRADUCOES[idioma][chave]);}
 function t(chaveOuTexto,vars={}){
  let chave=CATALOGO[chaveOuTexto]?chaveOuTexto:chaveDe(String(chaveOuTexto));
  const pt=origem(chave)||String(chaveOuTexto);
@@ -1996,7 +1997,8 @@ function stateRainEditor(uf){
   };
 }
 function ufEvidenceLabel(r){return !r.local?'◇ simulação':r.disagreement?'! divergência':'● pesquisa ('+r.local.count+')';}
-function ufEvidenceDetail(r){if(!r.local)return 'Simulação do primeiro turno: não é pesquisa estadual observada.'; return 'Modelo '+n2(r.priorShare*100)+'%; pesquisas '+n2(r.local.share*100)+'%; combinado '+n2(r.share*100)+'%; peso pesquisa '+n1(r.pollWeight*100)+'% / modelo '+n1((1-r.pollWeight)*100)+'%; incerteza da pesquisa ±'+n1(1.96*r.local.sdPP)+' p.p. (aproximação); campo '+r.local.from+'; fonte '+r.local.source;}
+function ufEvidenceDetail(r){if(!r.local)return 'Simulação do primeiro turno: não é pesquisa estadual observada.';
+ return 'Modelo '+n2(r.priorShare*100)+'%; pesquisas '+n2(r.local.share*100)+'%; combinado '+n2(r.share*100)+'%; peso pesquisa '+n1(r.pollWeight*100)+'% / modelo '+n1((1-r.pollWeight)*100)+'%; incerteza da pesquisa ±'+n1(1.96*r.local.sdPP)+' p.p. (aproximação); campo '+r.local.from+'; fonte '+r.local.source;}
 function renderTiles(){if(typeof dataReady==='function'&&!dataReady()){var guarded=document.getElementById('tiles');if(guarded)guarded.innerHTML='<p class=\"note\">Mapa por UF: A IMPORTAR.</p>';return;}
   var box=$('#tiles'); var html='';
   STATES.forEach(function(s){
@@ -2995,7 +2997,8 @@ async function loadPdfJs(){
     PDFJS_BLOB_URLS_2026={main:mainUrl,worker:workerUrl,mainSha256:verified[0].sha256,workerSha256:verified[1].sha256};
     try{
       var lib=await import(mainUrl);
-      if(!lib||lib.version!==PDFJS_VERSION_2026)throw new Error('versão do PDF.js diferente da versão fixada');      lib.GlobalWorkerOptions.workerSrc=workerUrl;
+      if(!lib||lib.version!==PDFJS_VERSION_2026)throw new Error('versão do PDF.js diferente da versão fixada');
+      lib.GlobalWorkerOptions.workerSrc=workerUrl;
       window.pdfjsLib=lib;
       return lib;
     }catch(e){
@@ -3994,7 +3997,8 @@ qaPollView();
   liveNote.textContent=ev.target.checked?'MODO TESTE FICTÍCIO ATIVO: os números digitados não serão apresentados como resultado oficial.':'Sem dados reais de segundo turno. Verifique no TSE antes de importar.';
   if(ev.target.checked)document.getElementById('live-observed').setAttribute('data-test','true');else document.getElementById('live-observed').removeAttribute('data-test');
  });
- // Organização de interface (não altera o motor, a paleta ou os cartões originais): // a documentação fica dentro dos ajustes opcionais, e a totalização dentro de Importar dados.
+ // Organização de interface (não altera o motor, a paleta ou os cartões originais):
+ // a documentação fica dentro dos ajustes opcionais, e a totalização dentro de Importar dados.
  // Isso preserva os recursos sem mostrar os dois cartões solicitados na tela principal.
  const painelImportacao=document.getElementById('uni');
  const painelTotalizacao=document.getElementById('live-observed');
