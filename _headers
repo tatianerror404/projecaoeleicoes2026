@@ -7,7 +7,7 @@
   Cross-Origin-Resource-Policy: same-origin
   X-Permitted-Cross-Domain-Policies: none
   Strict-Transport-Security: max-age=31536000
-  Content-Security-Policy: default-src 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' blob: 'sha256-jF0wcHTTwc1CppCBuPz0yDtNPS5OI3yKexOPIrC52jI=' 'sha256-xSbYEe/8l5ECmkQHuhBJgqKNVGm2h4fWXZGo0Nc2hKU=' 'sha256-V3n504ngHZFxIGsIDINgYis3TT5Yj0MOzMduI916gR0=' 'sha256-AdsOaxeniCA2WnM8HUr5cQDRk90bssaP7xoyobXp6dM='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://apiprevmet3.inmet.gov.br https://servicodados.ibge.gov.br https://cdn.jsdelivr.net https://unpkg.com; img-src 'self' data:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob:; frame-src 'none'; media-src 'none'; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' blob: 'sha256-jF0wcHTTwc1CppCBuPz0yDtNPS5OI3yKexOPIrC52jI=' 'sha256-xSbYEe/8l5ECmkQHuhBJgqKNVGm2h4fWXZGo0Nc2hKU=' 'sha256-OSg++unPr1W9zSPTcItmuv3b+izdM0lkGa+4uSsoGmk=' 'sha256-AdsOaxeniCA2WnM8HUr5cQDRk90bssaP7xoyobXp6dM='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://apiprevmet3.inmet.gov.br https://servicodados.ibge.gov.br https://cdn.jsdelivr.net https://unpkg.com; img-src 'self' data:; font-src 'self' data:; worker-src 'self' blob:; child-src 'self' blob:; frame-src 'none'; media-src 'none'; manifest-src 'self'; upgrade-insecure-requests
   X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
 
 /pesquisas-atualizadas.json
