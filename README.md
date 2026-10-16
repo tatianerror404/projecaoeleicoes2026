@@ -2,7 +2,7 @@
 
 Dashboard interativo para exploração de cenários do **2º turno da eleição presidencial brasileira de 2026**.
 
-O projeto foi desenvolvido como uma aplicação web estática, com foco em **análise de dados, lógica de negócio, modelagem estatística, validação de entradas, segurança e visualização interativa**.
+O projeto foi desenvolvido como uma aplicação web estática, com foco em **análise de dados, lógica de negócio, modelagem estatística, validação de entradas e visualização interativa**.
 
 > **Importante:** este projeto não é uma IA que “prevê” o resultado da eleição. É um **modelo de projeção baseado em regras, dados de pesquisas e premissas estatísticas**. Os resultados são cenários modelados e não substituem pesquisas, apuração oficial ou previsão eleitoral calibrada.
 
@@ -64,20 +64,6 @@ O painel também executa **simulações de Monte Carlo** para representar incert
 - validação de URLs, JSON e arquivos importados;
 - controles para reduzir entrada de dados inválidos ou incompatíveis.
 
-## Segurança
-
-O projeto utiliza cabeçalhos de segurança no Cloudflare Pages, incluindo:
-
-- **Content Security Policy (CSP)**;
-- **HSTS**;
-- **X-Content-Type-Options**;
-- **X-Frame-Options**;
-- **Referrer-Policy**;
-- **Permissions-Policy**;
-- restrições de origem para scripts, conexões, frames e outros recursos.
-
-Também há validações no JavaScript para conteúdo externo e dados importados.
-
 ## Arquitetura
 
 A aplicação foi propositalmente mantida como um projeto estático: os cálculos e a maior parte da lógica são executados diretamente no navegador.
@@ -110,7 +96,7 @@ Neste projeto, uma parte relevante do **CSS e do JavaScript está incorporada ao
 
 Este projeto foi desenvolvido aplicando conhecimentos de **Análise e Desenvolvimento de Sistemas**, passando por diferentes etapas de uma solução real:
 
-**levantamento do problema → definição de regras → modelagem dos dados → implementação → validação → testes → segurança → versionamento → deploy.**
+**levantamento do problema → definição de regras → modelagem dos dados → implementação → validação → testes → versionamento → deploy.**
 
 Além da interface, o foco do projeto está principalmente na lógica que transforma dados e premissas em cenários reproduzíveis e auditáveis.
 
