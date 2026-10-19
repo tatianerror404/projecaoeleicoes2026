@@ -1,1 +1,6 @@
-{"schema_version":1,"updated_at":"2026-10-16T21:32:00Z","version":"2026-10-16-polls-3","polls":[{"n":"PoderData/Aya","campo":"13 a 15/10","amostra":3000,"moe":1.8,"L":50,"F":50,"base":"validos","scope":"nacional","source":"https://www.poder360.com.br/poderdata/flavio-e-lula-empatam-em-50-dos-votos-validos-diz-poderdata-aya/","registro":"BR-04258/2026","metodo":"telefone","contratante":"PoderData","divulgacao":"2026-10-16"},{"n":"Indexa/Broadcast","campo":"13 a 14/10","amostra":2000,"moe":2.2,"L":49,"F":51,"base":"validos","scope":"nacional","source":"https://www.cnnbrasil.com.br/eleicoes/indexa-broadcast-flavio-tem-51-dos-votos-validos-no-2o-turno-lula-49/","registro":"BR-04629/2026","metodo":"telefone","contratante":"Agência Estado","divulgacao":"2026-10-15"}]}
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-19T09:24:00-03:00",
+  "version": "2026-10-19-0924BRT",
+  "polls": []
+}
