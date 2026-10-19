@@ -1,6 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T09:24:00-03:00",
-  "version": "2026-10-19-0924BRT",
-  "polls": []
+  "updated_at": "2026-10-19T14:56:11Z",
+  "version": "2026-10-19-polls-1",
+  "polls": [
+    {"n": "BTG/Nexus", "campo": "16 a 18/10", "amostra": 2002, "moe": 2.0, "L": 49.7, "F": 50.3, "base": "validos", "scope": "nacional", "source": "https://www1.folha.uol.com.br/poder/2026/10/btgnexus-flavio-bolsonaro-tem-503-e-lula-497-dos-votos-validos.shtml", "registro": "BR-04499/2026", "metodo": "telefone", "contratante": "Banco BTG Pactual", "divulgacao": "2026-10-19"},
+    {"n": "PoderData/Aya", "campo": "16 a 18/10", "amostra": 3000, "moe": 1.8, "L": 48.0, "F": 52.0, "base": "validos", "scope": "nacional", "source": "https://www.poder360.com.br/poderdata/pesquisa-poderdata-aya-leia-os-resultados-de-lula-e-flavio-no-2o-turno-19out2026/", "registro": "BR-02586/2026", "metodo": "telefone", "contratante": "PoderData (recursos próprios)", "divulgacao": "2026-10-19"},
+    {"n": "Vox Brasil", "campo": "15 a 17/10", "amostra": 2100, "moe": 2.15, "L": 51.0, "F": 49.0, "base": "validos", "scope": "nacional", "source": "https://www.cnnbrasil.com.br/eleicoes/vox-lula-tem-51-dos-votos-validos-no-2o-turno-flavio-49/", "registro": "BR-04332/2026", "metodo": "presencial", "contratante": "Instituto Vox Brasil (recursos próprios)", "divulgacao": "2026-10-18"}
+  ]
 }
